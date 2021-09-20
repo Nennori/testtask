@@ -47,7 +47,7 @@ function checkSelect(){
   let select = document.querySelector('.select__header')
   let currentText = select.innerText
   let selects = document.querySelectorAll('.select__item')
-  select.classList.add('input_incorrect')
+  select.classList.remove('input_incorrect')
   for(var i = 0; i < selects.length; i++) {
     var item = selects[i]
     console.log(item.innerText)

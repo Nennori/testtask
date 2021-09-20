@@ -1,2 +1,12 @@
 .slider__radio  
   display: none 
+#imagetape1:checked ~ .slider__item1,
+#imagetape2:checked ~ .slider__item2,
+#imagetape3:checked ~ .slider__item3
+  position: relative,
+  opacity: 1
+#imagetape1:checked ~ .slider__number-list .slider__number-after1,
+#imagetape2:checked ~ .slider__number-list .slider__number-after2,
+#imagetape3:checked ~ .slider__number-list .slider__number-after3
+  opacity: 1
+    
