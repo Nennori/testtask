@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/app.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <div class="header__logo">
+          <img src="images/dest/logo.png">
+        </div>
+        <nav class="header__menu">
+          <ul class="header_list">
+            <li class="header__item"><a class="header__link" href="#info">Jane Doe</a></li>
+            <li class="header__item"><a class="header__link" href="#form-about">Tell us about yourself</a></li>
+            <li class="header__item"><a class="header__link" href="#slider">Slider</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="info" id="info">
+      <div class="info__avatar">
+        <img src="images/dest/avatar.png">
+        <div class="info__decor">
+          <img src="images/dest/rect3.png">
+        </div>
+      </div>
+      <div class="info__about">
+        <h1 class="info__title">Jane Doe</h1>
+        <div class="info__details">
+          <div class="characteristic characteristic_info">
+            <div class="characteristic__name">Date of birth</div>
+            <div class="characteristic__value">21.04.2001</div>
+          </div>
+          <div class="characteristic characteristic_info">
+            <div class="characteristic__name">Gender</div>
+            <div class="characteristic__value">female</div>
+          </div>
+          <div class="characteristic characteristic_info">
+            <div class="characteristic__name">Country</div>
+            <div class="characteristic__value">Corea</div>
+          </div>
+        </div>
+        <div>
+          <h2 class="info__caption">About me</h2>
+          <p class="info__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="form-about" id="form-about">
+      <div class="form-about__decor-left">
+        <img src="images/dest/rect2.png">
+      </div>
+      <div class="form-about__decor-right">
+        <img src="images/dest/rect1.png">
+      </div>
+        <h2 class="form-about__title">Tell us about yourself</h2>
+        <form action="" name="about" method="post" enctype="multipart/form-data">
+          <div class="form-about__section-first">
+            <label class="form-about__label">
+              Your name<input type="text" name="name" class="input input_form-about input-first" placeholder="Tell us your name">
+            </label>
+            <label class="form-about__label">
+              Your gender
+              <div class="select">
+                  <div class="select__header">
+                    <span class="select__current">Choose your gender</span>
+                    <div class="select__icon select__icon-active"><img src="images/dest/arrow.png"></div>
+                  </div>
+                  <div class="select__body">
+                    <div class="select__item">Male</div>
+                    <div class="select__item">Female</div>
+                  </div>
+              </div>
+            </label>
+          </div>
+          <div class="form-about__section-second form-about__section-second-inactive">
+            <label class="form-about__label">
+              Your country<input type="text" name="country" class="input input_form-about input-second" placeholder="Where are you from?">
+            </label>
+            <label class="form-about__label">
+              Your City<input type="text" name="city" class="input input_form-about input-second" placeholder="Your native city">
+            </label>
+            <label class="form-about__label">
+              Your date of birth<input type="text" name="birth" class="input input_form-about input-second" onfocus="(this.type='date')" placeholder="dd.mm.yyyy">
+            </label>
+          </div>
+          <div class="download-section download-section_form-about download-section-inactive">
+            <div class="download-section__field">
+              <span class="form-about__proof-title">Proof your identity with some documents</span>
+              <label class="secondary-button">
+                <span class="download-section__add-caption">Add document</span>
+                <input type="file" name="file" class="input__file" id="fileElen" required="" multiple="" form="form-about">
+              </label>
+            </div>
+            <div class="download-section__upload"></div>
+          </div>
+          <input class="primary-button primary-button_disabled" type="submit" value="Send info" disabled="">
+        </form>
+    </div>
+    <footer class="footer">
+      <div class="slider-container">
+        <button class="slider__arrow-next">
+          <img src="images/dest/arrow-right.svg">
+        </button>
+        <button class="slider__arrow-prev">
+          <img src="images/dest/arrow-left.svg">
+        </button>
+        <div class="slider" id="slider">
+          <input name="imagetape" id="imagetape1" class="slider__radio" type="radio" checked="">
+          <input name="imagetape" id="imagetape2" class="slider__radio" type="radio">
+          <input name="imagetape" id="imagetape3" class="slider__radio" type="radio">
+          <div class="slider__caption">
+            <h2 class="slider__title">Slide this photo</h2>
+            <p class="slider__inscription">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="slider__item slider__item1">
+            <img src="images/dest/slider1-desktop.png" class="slider__img">
+          </div>
+          <div class="slider__item slider__item2">
+            <img src="images/dest/slider2-desktop.png" class="slider__img">
+          </div>
+          <div class="slider__item slider__item3">
+            <img src="images/dest/slider3-desktop.png" class="slider__img">
+          </div>
+          <div class="slider__number-list">
+            <label class="slider__number" for="imagetape1">
+              <p class="slider__number-after slider__number-after1"></p>
+            </label>
+            <label class="slider__number" for="imagetape2">
+              <p class="slider__number-after slider__number-after2"></p>
+            </label>
+            <label class="slider__number" for="imagetape3">
+              <p class="slider__number-after slider__number-after3"></p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/app.min.js"></script>
+  </body>
+</html>
