@@ -1,0 +1,9 @@
+File from: [app/images/src/Logo.png]
+
+File to: [app/images/dest/Logo.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /var/www/projects/testtask/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/Logo.png app/images/src/Logo.png
+  error: Read error (libpng failed)
+  error: cannot decode image Logo.png

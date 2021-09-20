@@ -1,0 +1,8 @@
+File from: [app/images/src/slider1-desktop.png]
+
+File to: [app/images/dest/slider1-desktop.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: /var/www/projects/testtask/node_modules/pngquant-bin/vendor/pngquant --quality=75-100 -o app/images/dest/slider1-desktop.png app/images/src/slider1-desktop.png
+  error: failed writing image to app/images/dest/slider1-desktop.png (16)
